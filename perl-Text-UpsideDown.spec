@@ -12,6 +12,8 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Text/Text-UpsideDown-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(IPC::Run3)
+BuildRequires: perl(Capture::Tiny)
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(English)
 BuildRequires:	perl(Exporter)

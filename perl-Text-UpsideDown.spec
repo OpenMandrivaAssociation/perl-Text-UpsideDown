@@ -1,15 +1,15 @@
 %define upstream_name    Text-UpsideDown
-%define upstream_version 1.100820
+%define upstream_version 1.22
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Flip text upside-down using Unicode
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Text/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Text/Text-UpsideDown-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
@@ -50,4 +50,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Fri Dec 24 2010 Shlomi Fish <shlomif@mandriva.org> 1.100.820-1mdv2011.0
 + Revision: 624646
 - import perl-Text-UpsideDown
+
 

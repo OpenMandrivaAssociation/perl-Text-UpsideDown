@@ -44,6 +44,8 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes LICENSE META.yml META.json README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+%{_bindir}/ud
+%{_mandir}/man1/ud.1*
 
 %changelog
 * Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 1.100.820-2mdv2011.0

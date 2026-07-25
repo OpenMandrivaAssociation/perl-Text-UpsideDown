@@ -2,14 +2,14 @@
 %define upstream_version 1.22
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Flip text upside-down using Unicode
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Text/Text-UpsideDown-%{upstream_version}.tar.gz
+Url:		https://github.com/doherty/Text-UpsideDown
+Source0:	https://cpan.metacpan.org/authors/id/D/DO/DOHERTY/Text-UpsideDown-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel

@@ -1,15 +1,13 @@
 %define upstream_name    Text-UpsideDown
-%define upstream_version 1.22
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	1.22
+Release:	5
 
 Summary:	Flip text upside-down using Unicode
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/doherty/Text-UpsideDown
-Source0:	https://cpan.metacpan.org/authors/id/D/DO/DOHERTY/Text-UpsideDown-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DO/DOHERTY/Text-UpsideDown-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -29,7 +27,7 @@ BuildArch:	noarch
 This module exports only one function.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
